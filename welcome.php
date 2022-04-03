@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +32,14 @@
             <div class="welcome-button">
                 <a class="welcome-register-button" href="./register.php">Register</a>
             </div>
+        </div>
+        <div class="regis-error-msg">
+            <?php
+            if (isset($_SESSION["succmsg"])) {
+                echo $_SESSION["succmsg"];
+                unset($_SESSION["succmsg"]);
+            }
+            ?>
         </div>
     </div>
 </body>

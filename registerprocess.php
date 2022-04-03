@@ -172,13 +172,14 @@ if (isset($_POST["sub"])) {
         if (!$query) {
             $_SESSION["registersuccess"] = false;
             $_SESSION["error"] =  $_SESSION["error"] . "Error: " . $query . "<br>" . mysqli_error($con);
-            header("location: register.php");
+            header("location: ./register.php");
         } else {
-            header("location: login.php");
+            $_SESSION["succmsg"] = "Register berhasil";
+            header("location: ./welcome.php");
         }
     }
 } else {
     // return to register page and show error
     $_SESSION["error"] = "failed to register";
-    header("Location: register.php");
+    header("Location: ./register.php");
 }

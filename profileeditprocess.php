@@ -18,10 +18,9 @@ if (isset($_POST["edit"])) {
         $result = mysqli_query($con, $sql);
         if (!$result) {
             $_SESSION["upsuccess"] = false;
+            $_SESSION["registersuccess"] = false;
             $_SESSION["error"] =  $_SESSION["error"] . "Error: " . $sql . "<br>" . mysqli_error($con);
             header("location: ./profileedit.php");
-        } else {
-            header("location: ./profile.php");
         }
     }
 
@@ -36,10 +35,9 @@ if (isset($_POST["edit"])) {
         $result = mysqli_query($con, $sql);
         if (!$result) {
             $_SESSION["upsuccess"] = false;
+            $_SESSION["registersuccess"] = false;
             $_SESSION["error"] =  $_SESSION["error"] . "Error: " . $sql . "<br>" . mysqli_error($con);
             header("location: ./profileedit.php");
-        } else {
-            header("location: ./profile.php");
         }
     }
 
@@ -54,10 +52,9 @@ if (isset($_POST["edit"])) {
         $result = mysqli_query($con, $sql);
         if (!$result) {
             $_SESSION["upsuccess"] = false;
+            $_SESSION["registersuccess"] = false;
             $_SESSION["error"] =  $_SESSION["error"] . "Error: " . $sql . "<br>" . mysqli_error($con);
             header("location: ./profileedit.php");
-        } else {
-            header("location: ./profile.php");
         }
     }
 
@@ -74,10 +71,9 @@ if (isset($_POST["edit"])) {
         $result = mysqli_query($con, $sql);
         if (!$result) {
             $_SESSION["upsuccess"] = false;
+            $_SESSION["registersuccess"] = false;
             $_SESSION["error"] =  $_SESSION["error"] . "Error: " . $sql . "<br>" . mysqli_error($con);
             header("location: ./profileedit.php");
-        } else {
-            header("location: ./profile.php");
         }
     }
 
@@ -92,10 +88,9 @@ if (isset($_POST["edit"])) {
         $result = mysqli_query($con, $sql);
         if (!$result) {
             $_SESSION["upsuccess"] = false;
+            $_SESSION["registersuccess"] = false;
             $_SESSION["error"] =  $_SESSION["error"] . "Error: " . $sql . "<br>" . mysqli_error($con);
             header("location: ./profileedit.php");
-        } else {
-            header("location: ./profile.php");
         }
     }
 
@@ -119,10 +114,9 @@ if (isset($_POST["edit"])) {
                 $result = mysqli_query($con, $sql);
                 if (!$result) {
                     $_SESSION["upsuccess"] = false;
+                    $_SESSION["registersuccess"] = false;
                     $_SESSION["error"] =  $_SESSION["error"] . "Error: " . $sql . "<br>" . mysqli_error($con);
                     header("location: ./profileedit.php");
-                } else {
-                    header("location: ./profile.php");
                 }
             }
         }
@@ -140,10 +134,9 @@ if (isset($_POST["edit"])) {
         $result = mysqli_query($con, $sql);
         if (!$result) {
             $_SESSION["upsuccess"] = false;
+            $_SESSION["registersuccess"] = false;
             $_SESSION["error"] =  $_SESSION["error"] . "Error: " . $sql . "<br>" . mysqli_error($con);
             header("location: ./profileedit.php");
-        } else {
-            header("location: ./profile.php");
         }
     }
 
@@ -159,10 +152,9 @@ if (isset($_POST["edit"])) {
         $result = mysqli_query($con, $sql);
         if (!$result) {
             $_SESSION["upsuccess"] = false;
+            $_SESSION["registersuccess"] = false;
             $_SESSION["error"] =  $_SESSION["error"] . "Error: " . $sql . "<br>" . mysqli_error($con);
             header("location: ./profileedit.php");
-        } else {
-            header("location: ./profile.php");
         }
     }
 
@@ -186,10 +178,9 @@ if (isset($_POST["edit"])) {
                 $result = mysqli_query($con, $sql);
                 if (!$result) {
                     $_SESSION["upsuccess"] = false;
+                    $_SESSION["registersuccess"] = false;
                     $_SESSION["error"] =  $_SESSION["error"] . "Error: " . $sql . "<br>" . mysqli_error($con);
                     header("location: ./profileedit.php");
-                } else {
-                    header("location: ./profile.php");
                 }
             }
         }
@@ -207,10 +198,9 @@ if (isset($_POST["edit"])) {
         $result = mysqli_query($con, $sql);
         if (!$result) {
             $_SESSION["upsuccess"] = false;
+            $_SESSION["registersuccess"] = false;
             $_SESSION["error"] =  $_SESSION["error"] . "Error: " . $sql . "<br>" . mysqli_error($con);
             header("location: ./profileedit.php");
-        } else {
-            header("location: ./profile.php");
         }
     }
 
@@ -234,21 +224,20 @@ if (isset($_POST["edit"])) {
                 $result = mysqli_query($con, $sql);
                 if (!$result) {
                     $_SESSION["upsuccess"] = false;
+                    $_SESSION["registersuccess"] = false;
                     $_SESSION["error"] =  $_SESSION["error"] . "Error: " . $sql . "<br>" . mysqli_error($con);
                     header("location: ./profileedit.php");
-                } else {
-                    header("location: ./profile.php");
                 }
             }
         }
     }
 
-    if (!$_SESSION["registersuccess"]) {
+    if (!$_SESSION["registersuccess"] || !$_SESSION["upsuccess"]) {
         header("location: ./profileedit.php");
     } else {
         header("location: ./profile.php");
     }
 } else {
     $_SESSION["error"] = "failed to update";
-    header("Location: register.php");
+    header("Location: ./profile.php");
 }

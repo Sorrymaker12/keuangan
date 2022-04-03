@@ -21,7 +21,7 @@ if (isset($_POST["edit"])) {
     if (!$upload) {
         $_SESSION["upsuccess"] = false;
         $_SESSION["error"] =  $_SESSION["error"] . "Upload foto profil baru gagal<br>";
-        header("location: profileedit.php");
+        header("location: ./imgedit.php");
     }
 
     if ($_SESSION["upsuccess"]) {
