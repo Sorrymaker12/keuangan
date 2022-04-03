@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 03, 2022 at 11:41 AM
+-- Generation Time: Apr 03, 2022 at 12:37 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.7
 
@@ -52,9 +52,13 @@ INSERT INTO `user` (`nd`, `nt`, `nb`, `tl`, `tgl`, `nik`, `wn`, `em`, `nh`, `al`
 ('Anthony Anthony', 'Wongso Wongso', 'Sutrisno Sutrisno', 'Jakarta Jakarta', '2022-04-01', '8899001122334455', 'Indonesia Indonesia', 'AnthonyAnthony@gmail.com', '665544332211', 'Jakarta Jakarta', '54321', 'Anthony', '123', './uploads/5-57430_a-collection-of-dual-monitor-wallpapers-dual-screen.jpg'),
 ('dog', 'Chapo', 'Mexico', 'Mexico', '2022-04-01', '1122334455617788', 'Mexico', 'peno@gmail.com', '444466668888', 'Jakarta', '12345', 'ElChapo', '123', './uploads/471327.jpg'),
 ('Pablo', 'Emilio', 'Escobar', 'Jakarta', '2022-04-01', '1122334455667788', 'Indonesia', 'asd@gmail.com', '444466668888', 'Jakarta', '12345', 'Escobar', '123', './uploads/3UXLAel.png'),
+('Mike', 'iron', 'tyson', 'USA', '2022-04-01', '6666666666666666', 'USA', 'usa@gmail.com', '666666666666', 'usa', '66666', 'iron', '123', './uploads/maxresdefault.jpg'),
+('Kye', 'De', 'A', 'Japan', '2022-04-01', '4444444444444444', 'Jepun', 'jepun@gmail.com', '444444444444', 'Jepun', '44444', 'Kyedea', '123', './uploads/green.png'),
 ('Vladimir', 'URA', 'Putin', 'Russia', '2022-04-01', '1234567887654321', 'Russia', 'Vputin@gmail.com', '223344556677', 'Russia', '12345', 'PutinA', '123', './uploads/BG.jpg'),
-('Jay', 'Sinatraa', 'Won', 'America America', '2022-04-01', '2222222222222222', 'America', 'won@gmail.com', '222222222222', 'Dimana Aja', '22222', 'Sinatraa', '123', './uploads/800px-Flag_of_Australia_(converted).svg.png'),
+('Jay', 'Sinatraa', 'Won', 'America America', '2022-04-01', '2222222222222222', 'America', 'wonnn@gmail.com', '222222222222', 'Dimana Aja', '22222', 'Sinatraa', '123', './uploads/asd.jpg'),
 ('Tyson', '\"TenZ\"', 'Ngo', 'Vietnam', '2022-04-01', '1010101010101010', 'Canada', 'tenzombie@gmail.com', '101010101010', 'LA', '10001', 'tenz', '10', './uploads/dark-wallpaper-36.jpg'),
+('URA', 'URA', 'URA', 'Russia', '2022-04-01', '5555555555555555', 'Ruski', 'ruski@gmail.ru', '555555555555', 'Ruski', '55555', 'URA', 'ura', './uploads/charles-leclerc-ferrari-1.jpg'),
+('Lil', 'Uzi', 'Vert', 'Uzi', '2022-04-01', '1212121212121212', 'Uzi', 'uziuzi@gmail.com', '121212121212', 'Uzi', '12122', 'uzi', '123', './uploads/959277.jpg'),
 ('Xavi', 'Alves', 'Tender', 'Jakarta', '2022-04-02', '1234567812345679', 'Indonesia', 'pen@gmail.com', '444466668888', 'Jakarta', '12345', 'XAT', '123', './uploads/206032.jpg');
 
 --
