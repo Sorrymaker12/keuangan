@@ -1,0 +1,413 @@
+* {
+	font-family: "Roboto", sans-serif;
+	font-size: 16;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.welcome-content {
+	width: 100%;
+	height: 1100px;
+	background-color: #caf0f8;
+}
+
+.welcome-title-wrapper {
+	padding: 4rem;
+	color: #03045e;
+}
+
+.welcome-title {
+	font-size: 6rem;
+	text-align: center;
+}
+
+.welcome-login-button {
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 2.5rem;
+	text-decoration: none;
+	color: #03045e;
+	background-color: #90e0ef;
+	border-radius: 4rem;
+}
+
+.welcome-login-button:hover {
+	background-color: #0077b6;
+	color: #ffd6a5;
+}
+
+.welcome-register-button {
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 2.5rem;
+	text-decoration: none;
+	color: #03045e;
+	background-color: #ade8f4;
+	border-radius: 4rem;
+}
+
+.welcome-register-button:hover {
+	background-color: #023e8a;
+	color: #ffd6a5;
+}
+
+.welcome-buttons-wrapper {
+	padding-top: 4rem;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome-button {
+	margin-left: 6rem;
+	margin-right: 6rem;
+}
+
+.regis-content {
+	width: 100%;
+	height: 1500px;
+	background-color: #ade8f4;
+}
+
+.regis-title {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.regis-title h1 {
+	font-size: 4rem;
+	text-align: center;
+	color: #03045e;
+}
+
+.regis-form-wrapper {
+	width: 100%;
+}
+
+.regis-error-msg {
+	padding-top: 3rem;
+	font-size: 1.5rem;
+	font-weight: bolder;
+	color: red;
+	text-align: center;
+}
+
+.input-wrapper {
+	width: 100%;
+	display: flex;
+}
+
+.input-left {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.input-right {
+	width: 50%;
+}
+
+.input-container {
+	display: flex;
+	padding: 1rem;
+}
+
+.input-label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 300px;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #03045e;
+}
+
+input:focus {
+	outline: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+	width: 450px;
+	height: 50px;
+	font-size: 1.25rem;
+	border-radius: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	border: none;
+}
+
+input[type="date"] {
+	width: 450px;
+	height: 50px;
+	font-size: 1.25rem;
+	border-radius: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	border: none;
+	text-align: center;
+}
+
+input[type="file"] {
+	width: 450px;
+	height: 50px;
+	font-size: 1.25rem;
+	border-radius: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border: none;
+	text-align: center;
+}
+
+.form-buttons-wrapper {
+	padding-top: 4rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.submit-button {
+	margin-left: 12rem;
+	margin-right: 12rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #03045e;
+	background-color: #bdb2ff;
+	border-radius: 4rem;
+	border: none;
+}
+
+.submit-button:hover {
+	cursor: pointer;
+	background-color: #fdffb6;
+}
+
+.kembali-button {
+	margin-left: 12rem;
+	margin-right: 12rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #03045e;
+	background-color: #ffadad;
+	border-radius: 4rem;
+	border: none;
+}
+
+.kembali-button:hover {
+	background-color: #caffbf;
+}
+
+.login-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 1100px;
+	background-color: #00b4d8;
+}
+
+.login-title {
+	padding-top: 4rem;
+	color: #ffd6a5;
+}
+
+.login-title h1 {
+	font-size: 4rem;
+	text-align: center;
+}
+
+.login-form {
+	margin-top: 4rem;
+	width: 40%;
+	height: 500px;
+	background-color: #bdb2ff;
+	border-radius: 5rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.login-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-label {
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding: 2rem;
+}
+
+.login-buttons-wrapper {
+	padding-top: 4rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.back-button {
+	margin-left: 4rem;
+	margin-right: 4rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #03045e;
+	background-color: #ffadad;
+	border-radius: 4rem;
+	border: none;
+}
+
+.back-button:hover {
+	background-color: #ffc6ff;
+}
+
+.login-button {
+	margin-left: 4rem;
+	margin-right: 4rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #03045e;
+	background-color: #fdffb6;
+	border-radius: 4rem;
+	border: none;
+}
+
+.login-button:hover {
+	background-color: #caffbf;
+	cursor: pointer;
+}
+
+.home-content {
+	width: 100%;
+	height: 1100px;
+	background-color: #90e0ef;
+}
+
+.home-nav {
+	height: 5rem;
+	width: 100%;
+	background-color: #023e8a;
+	display: flex;
+	justify-content: space-between;
+}
+
+.home-nav-text {
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	font-size: 2rem;
+	color: #fdffb6;
+}
+
+.home-nav-buttons {
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-top: 1.75rem;
+	padding-bottom: 1.75rem;
+	font-size: 1.5rem;
+}
+
+.home-nav-buttons a {
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-decoration: none;
+	color: #fdffb6;
+}
+
+.home-nav-buttons a:hover {
+	background-color: #a0c4ff;
+}
+
+.profile-content {
+	height: 1100px;
+	width: 100%;
+	background-color: #90e0ef;
+}
+
+.profile-disp img {
+	height: 100px;
+	width: 100px;
+}
+
+.profile-disp {
+	width: 450px;
+	height: 50px;
+	font-size: 1.25rem;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile-button {
+	padding-top: 4rem;
+	text-align: center;
+}
+
+.profile-edit {
+	font-size: 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: #FFADAD;
+	border-radius: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.profile-edit:hover {
+	background-color: #C0FFBF;
+}
+
+.edit-profile-content {
+	width: 100%;
+	height: 1500px;
+	background-color: #a0c4ff;
+}
+
+.home-text {
+	padding-top: 6rem;
+	text-align: center;
+	font-size: 4rem;
+}
+
+.home-text-bold {
+	font-weight: 900;
+}
